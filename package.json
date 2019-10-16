@@ -1,0 +1,37 @@
+{
+  "name": "react-ssr-babel7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-source-map": "nodemon -r source-map-support/register ./build_server/bundle.js",
+    "start": "nodemon ./build_server/bundle.js",
+    "webpack-server-dev": "NODE_ENV=development webpack --config ./config/webpack.server.js --watch",
+    "webpack-server-prod": "NODE_ENV=production webpack --config ./config/webpack.server.js",
+    "webpack-client-dev": "NODE_ENV=development webpack --config ./config/webpack.client.js --watch",
+    "webpack-client-prod": "NODE_ENV=production webpack --config ./config/webpack.client.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
+    "log4js": "^5.2.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "source-map-support": "^0.5.13"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "nodemon": "^1.19.4",
+    "terser-webpack-plugin": "^2.1.3",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
