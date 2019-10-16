@@ -1,8 +1,7 @@
-import 'source-map-support/register'
-// Instead of:
-import sourceMapSupport from 'source-map-support'
-sourceMapSupport.install()
-
+// import 'source-map-support/register'
+// // Instead of:
+// import sourceMapSupport from 'source-map-support'
+// sourceMapSupport.install()
 import express from 'express'
 import React from 'react'
 import {renderToString} from 'react-dom/server'
