@@ -6,6 +6,7 @@
   "scripts": {
     "start-source-map": "nodemon -r source-map-support/register ./build_server/bundle.js",
     "start": "nodemon ./build_server/bundle.js",
+    "start-es": "node --experimental-modules  --loader ./loader.mjs ./src/server/index.js",
     "webpack-server-dev": "NODE_ENV=development webpack --config ./config/webpack.server.js --watch",
     "webpack-server-prod": "NODE_ENV=production webpack --config ./config/webpack.server.js",
     "webpack-client-dev": "NODE_ENV=development webpack --config ./config/webpack.client.js --watch",

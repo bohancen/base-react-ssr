@@ -29,3 +29,10 @@
   `yarn start-source-map`
   
   `yarn start`
+
+## 增加loader.mjs node预编译es代码(测试中))
+
+  [参考地址1](https://github.com/ChenShenhai/blog/issues/24)
+  [参考地址2](https://nodejs.org/docs/latest-v11.x/api/esm.html)
+  [api版本](https://nodejs.org/zh-cn/docs/)
+  
